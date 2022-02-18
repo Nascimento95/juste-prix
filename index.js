@@ -4,7 +4,7 @@ let error = document.querySelector('.erreur')
 let formulaire = document.querySelector('.formulaire')
 let divInstruc = document.querySelector('.instruction')
 // cacher les erreur
-// console.log(error)
+
 error.style.visibility = "hidden"
 
 
@@ -18,7 +18,7 @@ let numRandom = () => {
 
 let numAléatoire = numRandom();
 
-console.log(numAléatoire)
+// console.log(numAléatoire)
 // vérifier que l'utilisateur rentre bien des nombre
 
 input.addEventListener('keyup', () => {
@@ -56,6 +56,7 @@ function verif(num) {
         instruction.innerHTML = `coups : ${coups} numéro entrez : ${nombreChoisie} Félicitations vous avez trouvé le juste prix !!`
         instruction.className = "para fini"
         divInstruc.prepend(instruction)
+        input.disabled = true;
     }
 }
 
