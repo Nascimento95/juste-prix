@@ -1,11 +1,15 @@
 body{
     margin: 0px;
-    background-color: rgb(252, 179, 44);
+    /* background-color: rgb(62, 62, 62); */
+    background: linear-gradient( to  right , rgb(255, 225, 0) , rgb(244, 167, 51));
 }
 header{
     display: flex;
     justify-content: center ;
     align-items: center;
+}
+h1{
+    color: red
 }
 section{
     display: flex;
@@ -15,22 +19,23 @@ section{
 .contain-input{
     width: 100%;
     margin: 0px 100px 0px 100px;
-    border : 1px solid black;
+    /* border : 1px solid black; */
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
 }
 .formulaire{
     width: 500px;
     display: flex;
+    /* border : 1px solid black; */
+    
 }
 input{
     width: 100%;
     height: 30px;
     border-radius: 10px;
-
 }
 button{
     background-color: aquamarine;
@@ -38,4 +43,28 @@ button{
     border-radius: 10px 10px 10px 10px;
     margin-left: 10px;
     width: 100px;
+}
+.erreur{
+    color: red;
+    display: flex;
+    justify-content: center;
+
+}
+.erreur + p {
+    width: 10px;
+}
+
+
+.plus{
+    background-color: #f67280;
+    color: white;
+}
+
+.moin{
+    background-color: #ffa372;
+    color: white
+}
+.fini{
+    background-color: #0c9463;
+    color: white
 }
